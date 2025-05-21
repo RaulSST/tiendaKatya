@@ -1,0 +1,600 @@
+#divContainPago {
+  display: flex;
+  margin-top: 140px;
+  flex-direction: column;
+}
+#containerPago {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+}
+
+#containerBreadcrumbs .breadcrumbs {
+  padding: 10px 15px;
+  display: flex;
+}
+
+#containerBreadcrumbs .breadcrumbs .bi-house-door {
+  color: #af2c74;
+  font-size: 17.5px;
+  position: relative;
+  display: block;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+#containerBreadcrumbs .breadcrumbs .bi-house-door:hover {
+  color: #e91e63;
+}
+
+#containerBreadcrumbs .breadcrumbs .bi-chevron-right {
+  padding-top: 2px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+#containerBreadcrumbs .breadcrumbs .bi-chevron-right:first-of-type {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+#containerBreadcrumbs .breadcrumbs .bi-chevron-right {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#containerBreadcrumbs .breadcrumbs a {
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#containerBreadcrumbs .breadcrumbs a.active {
+  color: #e91e63;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 17.5px;
+}
+
+#containerBreadcrumbs .breadcrumbs p {
+  margin: 0;
+  color: black;
+  font-weight: 400;
+  font-size: 17.5px;
+}
+
+#divContainPago h6 {
+  margin-top: 0;
+  background-color: #e5e0e0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+#divContainPago .divFormPago,
+#divContainPago  .order-summary {
+  padding: 10px 20px;
+}
+
+#divContainPago .divFormPago form label {
+  font-weight: 500;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#divContainPago .inputPago {
+  padding: 8px 30px 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#divContainPago .order-summary table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#divContainPago .order-summary td {
+  padding: 8px 0;
+}
+#divContainPago .order-summary td:last-child {
+  text-align: right;
+}
+
+#divContainPago .order-summary .btnPago {
+  width: 100%;
+  padding: 10px;
+  background-color: #ba3b81;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px !important;
+  font-weight: 500;
+  transition: 0.5s;
+}
+#divContainPago .order-summary .btnPago:hover {
+  background-color: white;
+  color: #ba3b81;
+  border: 1px solid #ba3b81;
+}
+
+
+/* cart.html */
+#divContainPago #formPagoCart {
+  width: 80%;
+}
+#divContainPago  #summaryCart {
+  margin-top: 30px;
+  width: 20%;
+  height: 250px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+  border-radius: 10px;
+}
+
+#summaryCart .subtotal td {
+  padding: 10px 5px 2px 5px;
+}
+#summaryCart .envio td {
+  padding: 2px 5px 10px 5px;
+}
+
+#summaryCart .envio {
+  border-bottom: 1px solid #e9e4e4;
+}
+
+#summaryCart .total {
+  font-size: 19px;
+}
+
+#summaryCart #tableCart .resumenPedido {
+  font-size: 19px;
+  border-bottom: 1px solid #e9e4e4;
+}
+
+#tableCart .resumenPedido td {
+  text-align: center !important;
+}
+
+#formPagoCart .tableFormCart {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  table-layout: fixed;
+}
+
+#formPagoCart .tableFormCart th {
+  text-align: center;
+  font-size: 18px;
+  padding: 8px;
+  background-color: #e5e0e0;
+  font-weight: 500;
+}
+
+#formPagoCart .tableFormCart th:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 50%;
+}
+
+#formPagoCart .tableFormCart th:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 10%;
+}
+
+#formPagoCart .tableFormCart td {
+  vertical-align: middle;
+}
+
+#formPagoCart .tableFormCart td img {
+  display: block;
+  margin: 0 auto;
+}
+
+#formPagoCart .tableFormCart .producto-img img {
+  width: 125px;
+  height: 125px;
+  margin: 0 auto;
+}
+
+#formPagoCart .tableFormCart .producto-cantidad,
+#formPagoCart .tableFormCart .producto-precioTotal,
+#formPagoCart .tableFormCart .producto-eliminar {
+  text-align: center;
+}
+
+#formPagoCart .tableFormCart .producto-eliminar .btnEliminar {
+  border: 0px;
+  background-color: transparent;
+}
+
+#formPagoCart .tableFormCart .producto-eliminar i {
+  color: #ba3b81 !important;
+  font-size: 22px !important;
+}
+
+#formPagoCart .cantidad-container {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #ba3b81;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#formPagoCart .cantidad-container .cantidad {
+  padding: 5px 15px;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  background-color: #fff;
+}
+
+#formPagoCart .cantidad-container .btnCantidad {
+  background-color: #ba3b81;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#formPagoCart .cantidad-container .btnCantidad:hover {
+  background-color: white;
+  color: #ba3b81;
+}
+
+#formPagoCart .cantidad-container button:nth-of-type(1) {
+  border-right: 1px solid #ba3b81;
+}
+
+#formPagoCart .cantidad-container button:nth-of-type(2) {
+  border-left: 1px solid #ba3b81;
+}
+
+#formPagoCart .producto-info p {
+  margin-bottom: 5px;
+}
+
+#formPagoCart .producto-info .producto-nombre {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+#formPagoCart .producto-info .producto-nombre a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+#formPagoCart .producto-info .producto-nombre a:hover {
+  color: rgb(148, 24, 148);
+}
+
+#formPagoCart .producto-info .producto-precio {
+  color: #ba3b81;
+  font-weight: 600;
+}
+
+#formPagoCart .producto-precioTotal .precioTotal {
+  font-size: 19px;
+  color: #ba3b81;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+#formPagoCart .filaProducto td {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+}
+
+#formPagoCart .filaProducto td:first-child {
+  border-left: 1px solid #ccc;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#formPagoCart .filaProducto td:last-child {
+  border-right: 1px solid #ccc;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+
+/* checkout.html */
+#divContainPago #formPagoCheckout {
+  width: 70%;
+}
+#divContainPago  #summaryCheckout {
+  margin-top: 0px;
+  border: 0px;
+  width: 30%;
+}
+
+#formPagoCheckout #formCheckout .form-group {
+  margin-bottom: 5px;
+}
+
+#formPagoCheckout #formCheckout .form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 5px;
+}
+
+#formPagoCheckout #formCheckout .form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#formPagoCheckout #formCheckout select {
+  cursor: pointer;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-color: white;
+  padding: 8px 30px 8px 8px;
+}
+
+#formPagoCheckout #formCheckout select:focus {
+  background-image: none;
+  outline: none;
+  padding: 0px;
+}
+
+#formPagoCheckout #formCheckout select option {
+  background-color: white;
+  color: #333;
+  padding: 8px;
+}
+
+#formPagoCheckout #formCheckout select option:hover {
+  background-color: rgb(44, 107, 255);
+  color: white;
+}
+
+#formPagoCheckout #formCheckout #distrito {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#formCheckout #telefono::-webkit-inner-spin-button,
+#formCheckout #telefono::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#formPagoCheckout #formCheckout .StripeElement {
+  height: 42px;
+}
+
+#formCheckout .StripeElement .__PrivateStripeElement {
+  top: 3px;
+}
+
+#summaryCheckout .terms {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+
+#summaryCheckout .terms input {
+  margin-right: 10px;
+}
+
+#summaryCheckout .terms .terms-label {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+#summaryCheckout .terms .terms-label input {
+  accent-color: #c13082;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+#summaryCheckout .terms .terms-label a {
+  color: #fd3d57;;
+  text-decoration: none;
+}
+
+#summaryCheckout #tableCheckout .title-orderSummary,
+#summaryCheckout #tableCheckout .subtotal,
+#summaryCheckout #tableCheckout .envio,
+#summaryCheckout #tableCheckout .total {
+  border-bottom: 1px solid #e9e4e4;
+}
+
+#summaryCheckout #tableCheckout .title-orderSummary {
+  font-size: 17.5px;
+}
+
+#summaryCheckout #tableCheckout .producto td:nth-of-type(1) {
+  text-align: left;
+}
+
+#summaryCheckout #tableCheckout .producto td:nth-of-type(2) {
+  text-align: center;
+}
+
+#summaryCheckout #tableCheckout .producto td:nth-of-type(3) {
+  text-align: right;
+}
+
+
+#formPagoCheckout #formCheckout #error-message {
+  margin-top: 3px;
+  color: #e10a15;
+  
+}
+.error-message {
+  margin-top: 3px;
+  color: #e10a15;
+  display: inline-block;
+}
+
+#formPagoCheckout #formCheckout #metodosPago {
+  width: 50%;
+  margin-top: 20px;
+}
+.errorTarjeta {
+  color: #e10a15;
+}
+
+#formCheckout #metodosPago div {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5px;
+}
+#formCheckout #metodosPago div img {
+  padding: 5px;
+  margin: 0;
+  height: 55px;
+  width: 55px;
+}
+#formCheckout #metodosPago div p {
+  padding: 5px;
+  margin: 0;
+  font-size: 16px;
+  color: black;
+}
+
+#divContainPago .metodo {
+  border: 2px solid transparent;
+  padding: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+#divContainPago .metodo.seleccionado {
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+#divContainPago .seleccionado {
+  border: 1px solid #ba3b81 !important;
+}
+
+#divContainPago #metodoTarjeta, #metodoEfectivo {
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: border 0.3s ease-in-out;
+}
+
+#divContainPago #metodoTarjeta:hover, #metodoEfectivo:hover {
+  border: 1px solid #ba3b81;
+}
+
+#divContainPago #formularioStripe {
+  margin-top: 10px;
+  display: none;
+}
+
+#divContainPago #contenidoMetodo {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#divContainPago #contenidoMetodo.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#divContainPago #contenidoMetodo p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#divContainPago #contenidoMetodo label {
+  margin-top: 3px;
+}
+
+
+/* success.html */
+#containCompleted {
+  margin-top: 140px;
+}
+
+#msgCompleted {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#msgCompleted img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+#msgCompleted h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 100%;
+}
+
+#msgCompleted h2 span {
+  color: #ba3b81;
+  font-weight: 700;
+  font-size: 37px;
+}
+
+#msgCompleted p {
+  font-size: 19px;
+  color: #555;
+  text-align: center;
+  margin-top: 5px !important;
+  margin-bottom: 10px !important;
+}
+
+#msgCompleted .btnCompleted {
+  width: 50%;
+  padding: 10px;
+  background-color: #ba3b81;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px !important;
+  margin-bottom: 5px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+#msgCompleted .btnCompleted:hover {
+  background-color: white;
+  color: #ba3b81;
+  border: 1px solid #ba3b81;
+}
+
+

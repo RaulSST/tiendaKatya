@@ -1,0 +1,820 @@
+#containAccount {
+  margin-top: 140px;
+}
+
+#containerBreadcrumbs .breadcrumbs {
+  padding: 10px 15px;
+  display: flex;
+}
+
+#containerBreadcrumbs .breadcrumbs .bi-house-door {
+  color: #af2c74;
+  font-size: 17.5px;
+  position: relative;
+  display: block;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+#containerBreadcrumbs .breadcrumbs .bi-house-door:hover {
+  color: #e91e63;
+}
+
+#containerBreadcrumbs .breadcrumbs .bi-chevron-right {
+  padding-top: 2px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+#containerBreadcrumbs .breadcrumbs .bi-chevron-right:first-of-type {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
+#containerBreadcrumbs .breadcrumbs .bi-chevron-right {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#containerBreadcrumbs .breadcrumbs a {
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 17.5px;
+}
+
+#containerBreadcrumbs .breadcrumbs a.active {
+  color: #e91e63;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 17.5px;
+}
+
+#containerBreadcrumbs .breadcrumbs p {
+  margin: 0;
+  color: black;
+  font-weight: 400;
+  font-size: 17.5px;
+}
+
+
+#containerAccount {
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+}
+
+#containerAccount #sidebar {
+  width: 25%;
+  padding: 20px;
+}
+
+#sidebar .user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
+}
+
+#sidebar nav {
+  margin-top: 30px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 10px 20px;
+}
+
+#sidebar nav a {
+  display: block;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#sidebar nav div {
+  padding-bottom: 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #e9e4e4;
+}
+
+#sidebar nav div>a:first-child {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  padding: 0 !important;
+}
+
+#sidebar nav div a {
+  font-size: 16px;
+  font-weight: 450;
+  padding-top: 3px;
+  padding-bottom: 1.5px;
+  padding-left: 35px;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+#sidebar nav div a:hover {
+  color: #e91e63;
+}
+
+#sidebar nav a.active,
+#sidebar nav div>a:first-child:hover {
+  color: #af2c74;
+}
+
+#sidebar nav div i {
+  font-size: 21px !important;
+  margin-right: 10px;
+}
+
+#sidebar .user-info i {
+  font-size: 24px !important;
+  margin-right: 10px;
+}
+
+#sidebar .user-info .name {
+  font-weight: 600;
+  font-size: 19px;
+  margin-bottom: 0px;
+}
+
+#sidebar .cerrarSesion {
+  border-bottom: 0px !important;
+  padding-bottom: 0% !important;
+}
+
+
+#main {
+  width: 75%;
+  padding: 20px;
+}
+
+#main p {
+  margin: 0;
+}
+
+#main .profile-section,
+#main .orders-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#main .profile-section {
+  margin-bottom: 40px;
+}
+
+#main .profile-section .card {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 250px;
+  position: relative;
+}
+
+#main .profile-section .card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#main .profile-section .card .edit {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #e91e63;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#main .orders-section {
+  flex-direction: column;
+}
+
+
+
+#main .orders-section .order-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px 35px;
+  gap: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#main .orders-section .order-card .order-info-superior,
+#main .orders-section .order-card .order-info-inferior {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#main .orders-section .order-card .order-images {
+  display: flex;
+  gap: 10px;
+  width: 50%;
+}
+
+#main .orders-section .order-card .status-rastreo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#main .orders-section .order-card .order-images img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+#main .orders-section .order-card .divBtnVerPedido {
+  display: flex;
+  align-items: center;
+}
+
+#main .orders-section .order-card .order-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#main .orders-section .order-card .order-details p {
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+}
+
+#main .orders-section .order-card .order-status {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 20px;
+  line-height: 120%;
+}
+
+#main .orders-section .order-card .order-status .status.proceso {
+  color: #e4ae0f;
+  font-weight: 700;
+}
+
+#main .orders-section .order-card .order-status .status.camino {
+  color: #2d5073;
+  font-weight: 700;
+}
+
+#main .orders-section .order-card .order-status .status.entregado {
+  color: #448c47;
+  font-weight: 700;
+}
+
+#main .order-card .btnPedido {
+  background-color: white;
+  color: #af2c74;
+  border: 1px solid #af2c74;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+#main .order-card .btnPedido:hover {
+  background-color: #af2c74;
+  color: white;
+}
+
+#main .orders-section .order-card .order-status .status {
+  font-size: 1.0rem;
+  font-weight: 500;
+}
+
+#main .orders-section h2 {
+  font-size: 1.5rem;
+}
+
+
+/* rastreo-pedido.css */
+#main .order-card .order-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#main .order-info .timeline {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main .timeline .progress-line {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  height: 4px;
+  background: #ccc;
+  width: 100%;
+  z-index: 0;
+}
+
+#main .timeline::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 0;
+  height: 4px;
+  background: #4caf50;
+  width: 0%;
+  z-index: 1;
+  transition: width 0.3s ease;
+}
+
+#main .timeline .step {
+  position: relative;
+  text-align: center;
+  width: 33.3333%;
+  z-index: 2;
+}
+
+#main .step .circle {
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 50%;
+  z-index: 2;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+#main .timeline div:nth-child(2) .circle {
+  margin-left: 0px !important;
+}
+
+#main .timeline div:nth-child(2) p {
+  text-align: left;
+}
+
+#main .timeline .step:last-child .circle {
+  margin-right: 0px !important;
+}
+
+#main .timeline .step:last-child p {
+  text-align: right;
+}
+
+#main .timeline[data-step="1"]::before {
+  width: 0%;
+}
+
+#main .timeline[data-step="2"]::before {
+  width: 50%;
+}
+
+#main .timeline[data-step="3"]::before {
+  width: 100%;
+}
+
+#main .timeline[data-step="1"] .step:nth-of-type(2) .circle {
+  background: #4caf50;
+}
+
+#main .timeline[data-step="1"] .step:nth-of-type(3) .circle {
+  background: #ccc;
+}
+
+#main .timeline[data-step="1"] .step:last-child .circle {
+  background: #ccc !important;
+}
+
+#main .timeline[data-step="2"] .step:nth-of-type(2) .circle {
+  background: #4caf50;
+}
+
+#main .timeline[data-step="2"] .step:nth-of-type(3) .circle {
+  background: #4caf50 !important;
+}
+
+#main .timeline[data-step="2"] .step:last-child .circle {
+  background: #ccc !important;
+}
+
+#main .timeline[data-step="3"] .step:nth-of-type(2) .circle {
+  background: #4caf50;
+}
+
+#main .timeline[data-step="3"] .step:nth-of-type(3) .circle {
+  background: #4caf50;
+}
+
+#main .timeline[data-step="3"] .step:last-child .circle {
+  background: #4caf50;
+}
+
+#main .order-info .msgEntrega {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #464545;
+    text-align: center;
+}
+
+#main .order-info .productoRastreo {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#main .productoRastreo .product,
+#main .productoRastreo .perfilPersonal,
+#main .productoRastreo .dirEnvio {
+  display: flex;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+#main .productoRastreo .product {
+    flex-direction: row;
+    flex: 1.7;
+    padding: 0px 10px;
+}
+
+#main .productoRastreo .dirEnvio,
+#main .productoRastreo .perfilPersonal {
+  flex-direction: column;
+  padding: 20px;
+}
+
+#main .productoRastreo .product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  flex: 1;
+}
+
+#main .product-details h3,
+#main .dirEnvio h3,
+#main .perfilPersonal h3 {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+
+}
+
+#main .product-details p {
+  width: 100%;
+  font-size: 15px;
+}
+
+#main .productoRastreo .divImgProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+#main .divImgProduct .imgProductoRastreo {
+  width: 120px;
+  height: 100px;
+}
+
+
+/* account-profile-info.html */
+#main .profileInfo h3 {
+  font-size: 25px;
+}
+
+#main #profileInfo-Form label {
+  font-weight: 400;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 16.5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#main #profileInfo-Form button {
+  margin-top: 30px;
+}
+
+#main #profileInfo-Form .form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 5px;
+}
+
+#main .form-row .form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#main #profileInfo-Form .inputAccount {
+  width: 100%;
+  padding: 8px 30px 8px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#main #profileInfo-Form .btnAccount {
+  background-color: rgb(186, 59, 129);
+  color: white;
+  font-weight: 500;
+  margin-top: 20px !important;
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+#main #profileInfo-Form .btnAccount:hover {
+  background-color: white;
+  color: #ba3b81;
+  border: 1px solid #ba3b81;
+}
+
+#main #profileInfo-Form input[type=number]::-webkit-outer-spin-button,
+#main #profileInfo-Form input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#new-email {
+  margin-bottom: 0px !important;
+}
+
+
+/* account-manage-address.html */
+#main #profileInfo-Form select {
+  cursor: pointer;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-color: white;
+  padding: 8px 30px 8px 8px;
+}
+
+#main #profileInfo-Form select:focus {
+  background-image: none;
+  outline: none;
+  padding: 0px;
+}
+
+#main #profileInfo-Form select option {
+  background-color: white;
+  color: #333;
+  padding: 8px;
+}
+
+#main #profileInfo-Form select option:hover {
+  background-color: rgb(44, 107, 255);
+  color: white;
+}
+
+#main #profileInfo-Form #distrito {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#main #profileInfo-Form #pais {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+/* account-change-password.html */
+#main #profileInfo-Form .form-group {
+  margin-bottom: 5px;
+}
+
+/* account-my-reviews.html */
+#main .profile-section #orderCardReviews {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+#main .profile-section #orderCardReviews .order-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#main .profile-section #orderCardReviews .imgReview {
+  width: 15%;
+}
+
+#main .profile-section #orderCardReviews .order-details {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#main .profile-section #orderCardReviews .order-details>div:first-child {
+  flex: 0.5;
+}
+
+#main .profile-section .order-card .imgReview img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+}
+
+
+/* account-metodo-tarjeta.html */
+#main .orders-section #metodTarjeta {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+
+#main .orders-section #metodTarjeta .order-info {
+  flex-direction: row;
+}
+
+#main .orders-section #metodTarjeta .imgTarjeta {
+  display: flex;
+  width: 10%;
+}
+
+#main .orders-section #metodTarjeta .imgTarjeta i {
+  font-size: 40px;
+}
+
+#main .orders-section #metodTarjeta .order-details {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#main .orders-section #metodTarjeta .order-details p {
+  margin: 0;
+}
+
+#main .orders-section #metodTarjeta .order-details .btnEditar,
+#main .orders-section #metodTarjeta .order-details .btnEliminar {
+  background-color: white;
+  color: #af2c74;
+  border: 1px solid #af2c74;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+#main .orders-section #metodTarjeta .order-details .btnEditar:hover,
+#main .orders-section #metodTarjeta .order-details .btnEliminar:hover {
+  background-color: #af2c74;
+  color: white;
+}
+
+/* account-new-tarjeta.html */
+#main .profileInfo .terms {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  display: flex !important;
+  gap: 10px;
+  font-size: 16px;
+  color: #333;
+  align-items: center;
+}
+
+#main .profileInfo .terms input {
+  accent-color: #c13082;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+#main #profileInfo-Form input[id^="tarj"] {
+  width: 50%;
+}
+
+#main #profileInfo-Form #rowNewTarjet {
+  width: 50%;
+}
+
+#main #profileInfo-Form #rowNewTarjet input {
+  width: 100%;
+}
+
+
+/* account-lista-deseos.html */
+#main .orders-section #cardListDeseo {
+  padding: 5px 30px;
+}
+
+#main .orders-section #cardListDeseo .order-info {
+  flex-direction: row;
+}
+
+#main .orders-section #cardListDeseo .order-images {
+  width: 15%;
+  margin-bottom: 0px;
+}
+
+#main .orders-section #cardListDeseo .order-details {
+  width: 85%;
+}
+
+#main #cardListDeseo .order-details .añadirCesta {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+#main #cardListDeseo .order-details .añadirCesta .btnPedido {
+  margin-bottom: 0px;
+}
+
+#main #cardListDeseo .order-details .añadirCesta .delete-comment {
+  background: none;
+  border: none;
+  color: #ff4b5c;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#main #cardListDeseo .order-details .añadirCesta .delete-comment:hover {
+  color: #e02c3c;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+#cart-count,
+#wishlist-count {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background-color: #e91e63;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.wishlistIcon {
+  cursor: pointer;
+}
+
+#profileInfo-Form .error-message {
+  color: red;
+  font-size: 17px;
+  margin-top: 8px !important;
+}
+
+.password-input-container {
+  position: relative;
+  width: 50%;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

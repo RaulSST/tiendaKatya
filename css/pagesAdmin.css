@@ -1,0 +1,501 @@
+/* Colores base */
+:root {
+    --color-primary: #8A2BE2; /* Azul violeta */
+    --color-secondary: #FF69B4; /* Rosa fuerte */
+    --color-light-bg: #F8F0FF; /* Fondo claro con toque morado */
+    --color-dark-text: #333;
+    --color-light-text: #fff;
+    --color-border: #ccc;
+    --color-error: #dc3545; /* Rojo para errores */
+    --color-success: #28a745; /* Verde para éxito */
+    --color-button-hover: #6A1B9A; /* Tono oscuro de morado para hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-light-bg);
+    margin: 0;
+    padding: 0; /* Ajustado a 0 porque el layout ahora es más complejo */
+    display: flex; /* Usamos flexbox para el layout principal */
+    min-height: 100vh;
+    color: var(--color-dark-text);
+}
+
+/* Contenedor principal de la administración */
+.admin-wrapper {
+    display: flex; /* Flexbox para la barra lateral y el contenido principal */
+    width: 100%;
+}
+
+/* Barra lateral de navegación */
+.sidebar {
+    width: 300px;
+    background-color: #af2c74;
+    padding: 20px;
+    flex-shrink: 0; /* Evita que se encoja */
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--color-light-text);
+    font-size: 1.8em;
+    font-family: 'Lobster', cursive;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    display: block;
+    background-color: white;
+    color: #af2c74;
+    padding: 12px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+    
+        
+.sidebar ul li a:hover {
+    background-color: #e91e63; 
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Contenido principal (formulario, tablas, etc.) */
+.main-content {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    padding: 20px 40px; /* Más padding para el contenido */
+    background-color: var(--color-light-bg);
+}
+
+.container-admin {
+    background-color: var(--color-light-text);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #af2c74;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    font-family: 'Lobster', cursive;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--color-dark-text);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select {
+    width: calc(100% - 20px); /* Resta padding para que no se desborde */
+    padding: 12px 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+select:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.2);
+}
+
+button[type="submit"] {
+    background-color: #e91e63;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border: 2px solid #e91e63;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: white;
+    color: #e91e63;
+}
+
+/* Estilos para mensajes de éxito y error */
+.message-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.message-container.success {
+    background-color: #d4edda;
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
+}
+
+.message-container.error {
+    background-color: #f8d7da;
+    color: var(--color-error);
+    border: 1px solid var(--color-error);
+}
+
+/* ... (tu CSS existente) ... */
+
+/* Estilos para tablas de administración */
+.table-responsive {
+    overflow-x: auto; /* Permite scroll horizontal en tablas grandes en móviles */
+    margin-top: 20px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: var(--color-light-text);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen */
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-table th {
+    background-color: #e91e63;
+    color: var(--color-light-text);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.admin-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Rayado para mejor legibilidad */
+}
+
+.admin-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.product-thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    margin: 3px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: var(--color-light-text);
+}
+
+.edit-btn {
+    background-color: #007bff; /* Azul de Bootstrap */
+}
+.edit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.delete-btn {
+    background-color: var(--color-error); /* Rojo */
+}
+.delete-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+}
+
+.update-status-btn {
+    background-color: var(--color-secondary); /* Rosa */
+}
+.update-status-btn:hover {
+    background-color: #E04C92;
+    transform: translateY(-1px);
+}
+
+.btn-action i {
+    margin-right: 5px;
+}
+
+/* Mensaje de no datos */
+.no-data-message {
+    text-align: center;
+    color: #666;
+    margin-top: 30px;
+    font-size: 1.1em;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+
+/* Estilos para la lista de órdenes (manage_orders.php) */
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Espacio entre cada tarjeta de orden */
+    margin-top: 20px;
+}
+
+.order-card-admin {
+    background-color: var(--color-light-text);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.order-header h3 {
+    margin: 0;
+    color: #e91e63;
+    font-size: 1.6em;
+}
+
+.order-status-badge {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--color-light-text);
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+/* Colores para los estados de orden */
+.status-en-proceso {
+    background-color: #ffc107; /* Amarillo */
+    color: #333;
+}
+.status-en-camino {
+    background-color: #17a2b8; /* Azul claro */
+}
+.status-entregado {
+    background-color: var(--color-success); /* Verde */
+}
+
+.order-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.order-details-grid p {
+    margin: 0;
+    font-size: 0.95em;
+}
+
+.order-products-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
+}
+
+.order-products-section h4 {
+    color: var(--color-dark-text);
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.order-product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #fcfcfc;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+}
+
+.order-product-item .product-thumbnail {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+}
+
+.order-product-item .product-info p {
+    margin: 0;
+    font-size: 0.9em;
+}
+.order-product-item .product-info p strong {
+    font-size: 1em;
+    color: #af2c74;
+}
+
+.order-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    justify-content: flex-end; /* Alinea los botones a la derecha */
+}
+
+.order-actions form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0; /* Elimina el margen del formulario */
+}
+
+.order-actions label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.order-actions select {
+    width: auto; /* Ajusta el ancho del select */
+    padding: 8px 10px;
+    font-size: 0.9em;
+}
+
+/* Responsive para tablas y órdenes */
+@media (max-width: 768px) {
+    .admin-table th,
+    .admin-table td {
+        padding: 8px 10px;
+        font-size: 0.85em;
+    }
+    .product-thumbnail {
+        width: 40px;
+        height: 40px;
+    }
+    .btn-action {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+    .order-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order-header h3 {
+        margin-bottom: 10px;
+    }
+    .order-details-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+    .order-product-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order-product-item .product-thumbnail {
+        margin-bottom: 10px;
+    }
+    .order-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order-actions form {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .order-actions select,
+    .order-actions button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-wrapper {
+        flex-direction: column; /* Apila sidebar y contenido en pantallas pequeñas */
+    }
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .sidebar h2 {
+        font-size: 1.5em;
+    }
+    .sidebar ul {
+        display: flex; /* Alinea los botones horizontalmente en móviles */
+        flex-wrap: wrap; /* Permite que los botones pasen a la siguiente línea */
+        justify-content: center;
+        gap: 10px; /* Espacio entre botones */
+    }
+    .sidebar ul li {
+        margin-bottom: 0; /* Elimina margen inferior extra */
+    }
+    .sidebar ul li a {
+        padding: 10px 12px;
+        font-size: 0.9em;
+    }
+    .main-content {
+        padding: 20px;
+    }
+    .container-admin {
+        padding: 20px;
+        margin: 0; /* Elimina el margen auto para que ocupe todo el ancho */
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    button[type="submit"] {
+        padding: 12px 15px;
+    }
+}

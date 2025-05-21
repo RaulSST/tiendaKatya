@@ -1,0 +1,122 @@
+#containerBreadcrumbs {
+  align-self: flex-start;
+}
+#containerBreadcrumbs p {
+  font-size: 17.5px;
+}
+#containerBreadcrumbs .breadcrumbs {
+  padding: 10px 15px;
+  display: flex;
+} 
+#containerBreadcrumbs .breadcrumbs a {
+  color: black;
+  position: relative;
+  display: block;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+#containerBreadcrumbs .breadcrumbs a.active {
+  color: #e91e63;
+  font-weight: 400;
+  text-decoration: none;
+}
+#containerBreadcrumbs .breadcrumbs .bi-house-door {
+  color: #af2c74;
+  font-size: 17.5px;
+  position: relative;
+  display: block;
+  transition: all 0.3s ease;
+}
+#containerBreadcrumbs .breadcrumbs .bi-house-door:hover {
+  color: #e91e63;
+}
+#containerBreadcrumbs .breadcrumbs .bi-chevron-right {
+  margin-right: 8px;
+  padding-top: 2px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+/* preguntas-frecuentes.html */
+#containFaq {
+  margin-top: 140px;
+  flex-direction: column;
+}
+#divContainFAQ {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 600px;
+}
+#divContainFAQ h2 {
+  margin-bottom: 3px;
+  text-align: center;
+  color: #af2c74;
+}
+#divContainFAQ p {
+  text-align: center;
+  margin-bottom: 25px !important;
+}
+#divContainFAQ .accordion {
+  max-width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+#divContainFAQ .accordion-item {
+  border-top: 1px solid #ddd;
+}
+#divContainFAQ .accordion-header {
+  background: #f9f9f9;
+  cursor: pointer;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s;
+}
+#divContainFAQ .accordion-header.active {
+  color: #e91e63;
+}
+#divContainFAQ .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0px 15px;
+  background: #fff;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+#divContainFAQ .accordion-content.open {
+  margin: 15px;
+}
+#divContainFAQ .accordion-icon {
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+
+/* politica-privacidad.html y terminos-condiciones.html */
+#containPolitPriv, #containTermsCondic {
+  margin-top: 140px;
+  flex-direction: column;
+}
+#divContainPolitPriv, #divContainTermsCondic {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 1000px;
+}
+#divContainPolitPriv h2, 
+#divContainTermsCondic h2 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #af2c74;
+}
+#divContainPolitPriv h4,
+#divContainTermsCondic h4 {
+  margin-bottom: 3px;
+}
+#divContainPolitPriv div,
+#divContainTermsCondic div {
+  margin-bottom: 25px;
+}
